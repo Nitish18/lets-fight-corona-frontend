@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { CreateRequestComponent } from './create-request/create-request.component';
 import { ContactCollabComponent } from './contact-collab/contact-collab.component';
+import { RaiseRequestGroceriesComponent } from './raise-request-groceries/raise-request-groceries.component';
+import { RaiseRequestMedicinesComponent } from './raise-request-medicines/raise-request-medicines.component';
+import { RaiseRequestFeelingSickComponent } from './raise-request-feeling-sick/raise-request-feeling-sick.component';
 
 
 
@@ -19,6 +22,9 @@ import { ContactCollabComponent } from './contact-collab/contact-collab.componen
     HomeComponent,
     CreateRequestComponent,
     ContactCollabComponent,
+    RaiseRequestGroceriesComponent,
+    RaiseRequestMedicinesComponent,
+    RaiseRequestFeelingSickComponent,
   ],
   imports: [
     BrowserModule,
