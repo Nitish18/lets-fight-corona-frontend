@@ -11,6 +11,7 @@ import { ContactCollabComponent } from './contact-collab/contact-collab.componen
 import { RaiseRequestGroceriesComponent } from './raise-request-groceries/raise-request-groceries.component';
 import { RaiseRequestMedicinesComponent } from './raise-request-medicines/raise-request-medicines.component';
 import { RaiseRequestFeelingSickComponent } from './raise-request-feeling-sick/raise-request-feeling-sick.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -25,6 +26,7 @@ import { RaiseRequestFeelingSickComponent } from './raise-request-feeling-sick/r
     RaiseRequestGroceriesComponent,
     RaiseRequestMedicinesComponent,
     RaiseRequestFeelingSickComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

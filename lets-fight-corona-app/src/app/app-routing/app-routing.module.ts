@@ -4,6 +4,7 @@ import {Routes, RouterModule} from '@angular/router'
 import { HomeComponent } from '../home/home.component';
 import { ContactCollabComponent } from '../contact-collab/contact-collab.component';
 import { CreateRequestComponent } from '../create-request/create-request.component';
+import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'raise-request',
     component: CreateRequestComponent
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   },
 ];
 
