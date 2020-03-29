@@ -1,1 +1,59 @@
-<p>raise-request-medicines works!</p>
+
+<section class="hero is-small is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Raise request for Medicines.
+      </h1>
+      <h2 class="subtitle">
+        Steps -
+      </h2>
+      <ul style="list-style-type:disc;">
+        <li>Fill some personal info to get notified by authorities when your request is being served.</li>
+        <li>Please enter your pin-code and phone number correctly</li>
+        <li>Be mindfull while filling request.</li>
+       </ul>
+    </div>
+  </div>
+</section>
+
+
+<form [formGroup]="medicineRequestForm" (ngSubmit)="onSubmit()">
+    <div class="field">
+        <label class="label">Name</label>
+        <input class="input" type="text" placeholder="Enter your name" formControlName="name">
+    </div>
+
+    <div class="field">
+        <label class="label">Address</label>
+        <input class="input" type="text" placeholder="Enter your address" formControlName="address">
+    </div>
+
+    <div class="field">
+        <label class="label">Pin Code</label>
+        <input class="input" type="number" placeholder="Enter your area pin code" formControlName="pincode">
+    </div>
+
+    <div class="field">
+        <label class="label">City</label>
+        <select class="select" formControlName="city">
+            <option *ngFor="let each_city of City">{{ each_city }}</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <label class="label">Phone Number</label>
+        <input class="input" type="number" placeholder="Enter your phone number" formControlName="phoneNumber">
+    </div>
+
+    <div class="field">
+        <label class="label">No of people</label>
+        <input class="input" type="number" placeholder="Enter total count of people" formControlName="peopleCount">
+    </div>
+
+    <div class="field" align="center">
+      <button class="button is-primary" type="submit" [disabled]="!medicineRequestForm.valid">Submit</button>
+    </div>
+
+</form>
+

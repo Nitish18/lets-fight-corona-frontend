@@ -5,6 +5,9 @@ import { HomeComponent } from '../home/home.component';
 import { ContactCollabComponent } from '../contact-collab/contact-collab.component';
 import { CreateRequestComponent } from '../create-request/create-request.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
+import { RaiseRequestGroceriesComponent } from '../raise-request-groceries/raise-request-groceries.component';
+import { RaiseRequestMedicinesComponent } from '../raise-request-medicines/raise-request-medicines.component';
+import { RaiseRequestFeelingSickComponent } from '../raise-request-feeling-sick/raise-request-feeling-sick.component';
 
 
 const routes: Routes = [
@@ -20,6 +23,18 @@ const routes: Routes = [
   {
     path: 'raise-request',
     component: CreateRequestComponent
+  },
+  {
+    path: 'raise-request-groceries',
+    component: RaiseRequestGroceriesComponent
+  },
+  {
+    path: 'raise-request-medicine',
+    component: RaiseRequestMedicinesComponent
+  },
+  {
+    path: 'raise-request-feeling-sick',
+    component: RaiseRequestFeelingSickComponent
   },
   {
     path: '**',
