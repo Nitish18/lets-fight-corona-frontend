@@ -3,7 +3,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        Raise request for Groceries.
+        Raise request for Food / Groceries
       </h1>
       <h2 class="subtitle">
         Steps -
@@ -44,6 +44,23 @@
     <div class="field">
         <label class="label">Phone Number</label>
         <input class="input" type="number" placeholder="Enter your phone number" formControlName="phoneNumber">
+    </div>
+
+    <div class="control">
+      <label class="label">Need for - </label>
+      
+      <input type="radio" id="requestGrocery" name="personRequestType" value="requestGrocery" formControlName="personRequestType">
+      <label for="requestGrocery">    Grocery</label><br>
+      <input type="radio" id="requestFood" name="personRequestType" value="requestFood" formControlName="personRequestType">
+      <label for="requestFood">    Food</label><br>
+      <input type="radio" id="requestBoth" name="personRequestType" value="requestBoth" formControlName="personRequestType">
+      <label for="requestBoth">    Both</label>
+      
+    </div>
+
+    <div class="field">
+        <label class="label">More Detail you would like to add</label>
+        <input class="input" type="text" placeholder="More Detail you would like to add" formControlName="requestCommentDetail">
     </div>
 
     <div class="field">
