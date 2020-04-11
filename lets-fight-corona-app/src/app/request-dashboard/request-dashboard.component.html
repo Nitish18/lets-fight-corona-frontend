@@ -1,0 +1,38 @@
+<div>
+  <section class="hero is-info is-small">
+    <div class="hero-body">
+      <div class="container" align="center">
+        <h4 class="title">
+          Dashboard
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" align="center">
+    <div>
+      <div>
+      <div align="center">
+        <h5>Total Requests VS City</h5>
+      </div>
+      <div align="center">
+      <ngx-charts-bar-vertical
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="single"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        (select)="onSelect($event)">
+      </ngx-charts-bar-vertical>
+      </div>
+      </div>
+    </div>
+  </section>
+
+</div>

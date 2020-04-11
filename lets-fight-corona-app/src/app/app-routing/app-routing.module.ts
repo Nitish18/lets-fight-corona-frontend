@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from '../page-not-found/page-not-found.componen
 import { RaiseRequestGroceriesComponent } from '../raise-request-groceries/raise-request-groceries.component';
 import { RaiseRequestMedicinesComponent } from '../raise-request-medicines/raise-request-medicines.component';
 import { RaiseRequestFeelingSickComponent } from '../raise-request-feeling-sick/raise-request-feeling-sick.component';
+import { RequestDashboardComponent } from '../request-dashboard/request-dashboard.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: 'raise-request-feeling-sick',
     component: RaiseRequestFeelingSickComponent
+  },
+  {
+    path: 'request-dashboard',
+    component: RequestDashboardComponent
   },
   {
     path: '**',

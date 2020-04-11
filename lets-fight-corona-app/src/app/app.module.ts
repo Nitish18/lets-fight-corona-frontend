@@ -15,7 +15,9 @@ import { RaiseRequestMedicinesComponent } from './raise-request-medicines/raise-
 import { RaiseRequestFeelingSickComponent } from './raise-request-feeling-sick/raise-request-feeling-sick.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { RequestDashboardComponent } from './request-dashboard/request-dashboard.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -31,12 +33,15 @@ import { HttpClientModule } from '@angular/common/http';
     RaiseRequestMedicinesComponent,
     RaiseRequestFeelingSickComponent,
     PageNotFoundComponent,
+    RequestDashboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgxChartsModule
   ],
   providers: [
     SendDataBackendService,
