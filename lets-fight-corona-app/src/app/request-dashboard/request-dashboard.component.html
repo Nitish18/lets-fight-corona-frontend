@@ -1,4 +1,4 @@
-<div>
+
   <section class="hero is-info is-small">
     <div class="hero-body">
       <div class="container" align="center">
@@ -9,11 +9,34 @@
     </div>
   </section>
 
-  <section class="section" align="center">
-    <div>
+  
+    <div class="flex-container">
       <div>
       <div align="center">
         <h5>Total Requests VS City</h5>
+      </div>
+      <div align="center">
+      <ngx-charts-bar-vertical
+        [view]="view"
+        [barPadding]="15"
+        [scheme]="colorScheme"
+        [results]="single"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        (select)="onSelect($event)">
+      </ngx-charts-bar-vertical>
+      </div>
+      </div>
+
+       <div>
+      <div align="center">
+        <h5>Total Requests VS Pincode</h5>
       </div>
       <div align="center">
       <ngx-charts-bar-vertical
@@ -32,7 +55,10 @@
       </ngx-charts-bar-vertical>
       </div>
       </div>
-    </div>
-  </section>
 
-</div>
+
+    </div>
+  
+  
+
+
